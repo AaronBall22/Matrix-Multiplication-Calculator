@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrix Multiplication Calculator</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div
+      id="wrapper"
+      style="margin-left: auto; margin-right: auto; width: 960px"
+    >
+      <div id="content">
+        <h1 id="title">Matrix Multiplication Calculator</h1>
+        <section id="matrixa-section">
+          <h2>Enter Dimensions of Matrix A</h2>
+          <form class="matrix-input-content">
+            <input class="matrixa-row" type="number" min="1" max="9" />
+            <span style="margin-left: 4px; margin-right: 4px">X</span>
+            <input class="matrixa-column" type="number" min="1" max="9" />
+          </form>
+        </section>
+        <section id="matrixb-section">
+          <h2>Enter Dimensions of Matrix B</h2>
+          <form class="matrix-input-content">
+            <input class="matrixb-row" type="number" min="1" max="9" />
+            <span style="margin-left: 4px; margin-right: 4px">X</span>
+            <input class="matrixb-column" type="number" min="1" max="9" />
+          </form>
+        </section>
+        <section class="section-content" style="margin-top: 200px">
+          <div style="display: inline-block">
+            <button id="set-matrices" style="padding: 6px">Set Matrices</button>
+          </div>
+          <div style="display: inline-block">
+            <button id="Calculate" style="text-align: center; padding: 6px">
+              Calculate
+            </button>
+          </div>
+        </section>
+        <p class="error-message">
+          Please make sure the columns of Matrix A equal the rows of Matrix B
+        </p>
+        <section class="section-content" style="margin-top: 100px">
+          <div
+            class="inner-matrix-border"
+            style="float: left; margin-right: 20px"
+          >
+            <div class="matrixa-border"></div>
+          </div>
+          <div class="inner-matrix-border">
+            <div class="matrixb-border"></div>
+          </div>
+        </section>
+        <h2 id="result">Result</h2>
+        <div class="resulting-matrix"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
